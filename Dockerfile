@@ -12,8 +12,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy app files
+# Copy all files
 COPY . .
 
-# Run the Flask app
+# Run the Flask app (FIXED line)
 CMD ["python", "app/index.py"]
